@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+  <bean id="engine" class="org.example.PetrolEngine"> </bean>
+    <!-- Jiska Autowire ByName Chahiye  USKI ID SAME HONE CHAIYE JO PRPERTY USE KR RHE H LIKE HERE
+    CAR CLASS ME engine
+    NOTE::::::: isme Setter dependency Injection hi chalta h
+    -->
+
+    <bean id="car" class="org.example.Car" autowire="byName">
+        <!--Setter Dependency Injection -->
+        <!--<property name="engine" ref="petrolEngine"/>-->
+        <!--Constructor Dependency Injection -->
+         <!--  <constructor-arg name="engine" ref="petrolEngine"/>-->
+
+
+    </bean>
+
+
+</beans>

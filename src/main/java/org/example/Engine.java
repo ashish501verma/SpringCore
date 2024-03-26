@@ -1,2 +1,6 @@
-package org.example;public interface Engine {
+package org.example;
+
+public interface Engine {
+
+   public int Start();
 }
